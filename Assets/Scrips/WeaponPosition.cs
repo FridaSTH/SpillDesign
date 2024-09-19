@@ -6,6 +6,7 @@ public class WeaponPosition : MonoBehaviour
 {
 
     Vector3 mousePos;
+    public Vector3 screenPos;
     float smooth = 100f;
     public Camera cam;
 
@@ -19,7 +20,7 @@ public class WeaponPosition : MonoBehaviour
     void Update()
     {
         mousePos = Input.mousePosition;
-        Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+        screenPos = cam.WorldToScreenPoint(transform.position);
         Quaternion target;
 
         // If mouse is on either side of the player

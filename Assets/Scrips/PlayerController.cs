@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
+    public GameObject bulletGeneration;
     Vector2 movementInput;
     Rigidbody2D rb;
     Animator animator;
@@ -44,7 +45,8 @@ public class PlayerController : MonoBehaviour
             moveSpeed * Time.fixedDeltaTime + collisionOffset
         );
         if(count == 0){
-            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * 0.8f * Time.fixedDeltaTime);
+            
             return true;
         } else {
             return false;
@@ -53,5 +55,10 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue movementValue) {
         movementInput = movementValue.Get<Vector2>();
+    }
+
+    // Runs once when left mouse button pressed
+    void OnFire() {
+        bulletGeneration.GetComponent<BulletGeneration>().FireBullet(5f);
     }
 }
