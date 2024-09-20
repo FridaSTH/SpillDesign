@@ -8,6 +8,10 @@ public class Enemy : MonoBehaviour
     Animator animator;
 
     public float moveSpeed = 1f;
+    public GameObject drop1;
+    public GameObject drop2;
+    public GameObject drop3;
+    public float dropRate;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
     Vector2 movementInput;

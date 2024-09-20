@@ -52,11 +52,11 @@ public class EnemyGeneration : MonoBehaviour
                     ((camPosition.y - (camHeight / 2)) <= yPos) &
                     (yPos <= (camPosition.y + (camHeight / 2))) 
                     ) {
-                    print("not generated" + Time.deltaTime);
+                    //print("not generated" + Time.deltaTime);
                     //noEnemyGenerated = true;
                 } else {
                     GenerateEnemy(enemy, xPos, yPos);
-                    print("Enemy generated in (" + xPos + ", " + yPos + ")");
+                    //print("Enemy generated in (" + xPos + ", " + yPos + ")");
                     noEnemyGenerated = false;
                 }
             }
@@ -67,7 +67,7 @@ public class EnemyGeneration : MonoBehaviour
     public void GenerateEnemy(GameObject enemyMonster, float xPos, float yPos) {
         if (enemyMonster != null) {
             GameObject enemyInstance = Instantiate(enemyMonster, new Vector3(xPos, yPos, transform.position.z), Quaternion.identity);
-            print("enemy generated");
+            //print("enemy generated");
         }
     }
 }
