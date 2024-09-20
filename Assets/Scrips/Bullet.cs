@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float damage = 1f;
     public float speed = 1f;
     public float timeToDisappear;
     Vector2 direction;
@@ -28,6 +29,17 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + direction * 0.8f * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + direction * 2f * Time.fixedDeltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "Enemy") {
+            // Deal damage
+            Enemy enemy = other.GetComponent<Enemy>();
+            if (enemy != null) {
+                enemy.TakeDamage(damage);
+                Destroy(gameObject);
+            }
+        }
     }
 }
