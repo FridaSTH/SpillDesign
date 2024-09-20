@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    public Collider2D hitBox; // For getting hit
 
     // Start is called before the first frame update
     void Start()

@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + direction * 2f * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + direction * 3f * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

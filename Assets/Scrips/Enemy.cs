@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour
             moveSpeed * Time.fixedDeltaTime + collisionOffset
         );
         if(count == 0){
-            rb.MovePosition(rb.position + direction * 0.1f * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * 0.3f * Time.fixedDeltaTime);
             
             return true;
         } else {
