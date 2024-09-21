@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public GameObject drop1;
     public GameObject drop2;
     public GameObject drop3;
+    private List<GameObject> dropList = new List<GameObject>();
     public float dropRate;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
@@ -28,6 +29,15 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player");
+        if (drop1 != null) {
+            dropList.Add(drop1);
+        }
+        if (drop2 != null) {
+            dropList.Add(drop2);
+        }
+        if (drop3 != null) {
+            dropList.Add(drop3);
+        }
     }
     public float HealthPoints {
         set {
@@ -98,6 +108,14 @@ public class Enemy : MonoBehaviour
     }
 
     public void RemoveEnemy() {
+        if (dropRate > Random.Range(0f, 1f)) {
+            if (dropList.Count > 0)
+            {
+                int randomIndex = Random.Range(0, dropList.Count); // Get a random index
+                GameObject selectedObject = dropList[randomIndex]; // Select the GameObject
+                Instantiate(selectedObject, transform.position, Quaternion.identity);
+            }
+        }
         Destroy(gameObject);
     }
 }
