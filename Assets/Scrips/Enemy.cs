@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     Rigidbody2D rb;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     GameObject player;
+    private bool isDying = false;
+    public Collider2D hitBox;
 
     // Start is called before the first frame update
     void Start()
@@ -42,20 +44,23 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate() {
         // Find player and move towards the player
-        //print("dsjfldksjfl");
-        movementInput = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
-        movementInput.Normalize();
-        if (movementInput != Vector2.zero){
-            bool success = TryMove(movementInput);
-            if(!success) {
-                success = TryMove(new Vector2(movementInput.x, 0));
-                if(!success) {
-                    success = TryMove(new Vector2(0, movementInput.y));
-                }
-            }
-            animator.SetBool("isMoving", success);   // Need to add more moving directions
-        } else {
+        if (isDying != false) {
             animator.SetBool("isMoving", false);
+        } else {
+            movementInput = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
+            movementInput.Normalize();
+            if (movementInput != Vector2.zero){
+                bool success = TryMove(movementInput);
+                if(!success) {
+                    success = TryMove(new Vector2(movementInput.x, 0));
+                    if(!success) {
+                        success = TryMove(new Vector2(0, movementInput.y));
+                    }
+                }
+                animator.SetBool("isMoving", success);   // Need to add more moving directions
+            } else {
+                animator.SetBool("isMoving", false);
+            }
         }
     }
 
@@ -86,6 +91,10 @@ public class Enemy : MonoBehaviour
 
     public void Defeated() {
         animator.SetTrigger("Defeated");
+        isDying = true;
+        if (hitBox != null) {
+            hitBox.enabled = false;
+        }
     }
 
     public void RemoveEnemy() {

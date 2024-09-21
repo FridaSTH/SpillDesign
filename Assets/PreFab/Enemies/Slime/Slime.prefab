@@ -190,6 +190,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  hitBox: {fileID: 4092930100384358126}
 --- !u!95 &4328972787677654533
 Animator:
   serializedVersion: 4
