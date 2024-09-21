@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public Collider2D hitBox; // For getting hit
     public WeaponController weaponController;
 
+    //private bool leftClickDown = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,8 @@ public class PlayerController : MonoBehaviour
         } else {
             animator.SetBool("isMovingDown", false);
         }
+
+        
     }
 
     private bool TryMove(Vector2 direction) {

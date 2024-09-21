@@ -10,20 +10,19 @@ public class WeaponController : MonoBehaviour
     public GameObject bulletGeneration;
     private GameObject currentWeapon;
     public List<GameObject> weaponList = new List<GameObject>();
+
+    //public bool leftClickDown = false;
     // Start is called before the first frame update
     void Start()
     {
         if (weapon2 != null) {
             weaponList.Add(weapon2);
-            print("added weapon 2");
         }
         if (weapon3 != null) {
             weaponList.Add(weapon3);
-            print("added weapon 3");
         }
         if (weapon1 != null) {
             weaponList.Add(weapon1);
-            print("added weapon 1");
             SetCurrentWeapon(weapon1);
         }
     }
@@ -31,6 +30,10 @@ public class WeaponController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check if left mousebutton is holding down, should be on trigger, but whatever for now
+        if (Input.GetMouseButton(0)) {
+            ContinuingFire();
+        }
         
     }
 
@@ -49,11 +52,28 @@ public class WeaponController : MonoBehaviour
         }
     }
 
-    public void SingleFire(){
+    public void SingleFire() {
         if (currentWeapon.GetComponent<SpriteRenderer>().sprite.name == "44") {
             FireThreeBullets();
+        } else if (currentWeapon.GetComponent<SpriteRenderer>().sprite.name == "22") {
+            FireSingleBullet();
         } else {
             FireSingleBullet();
+        }
+    }
+
+    private float timer = 0f;
+    private float interval = 0.1f;
+    public void ContinuingFire() {
+        if (currentWeapon.GetComponent<SpriteRenderer>().sprite.name == "22") {
+
+            
+            timer += Time.deltaTime;
+            if (timer >= interval)
+            {
+                FireSingleBullet();
+                timer = 0f;
+            }
         }
     }
 
