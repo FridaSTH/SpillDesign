@@ -8,7 +8,7 @@ public class EnemyGeneration : MonoBehaviour
     public GameObject enemy;
 
     private float timer = 0f;  // Timer to keep track of time
-    public float interval = 1f;
+    public float interval = 0.1f;
     private SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()

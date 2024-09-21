@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420031}
   enemy: {fileID: 3874134867645406843, guid: cb185eacdf717584e8ebf8c79c3a3255, type: 3}
-  interval: 1
+  interval: 0.5
 --- !u!212 &239931396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19578,6 +19578,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1233284548, guid: 06d96f94678ecd64e842a2554f6a7893, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 7968852681163963808, guid: cb5a31bc3e9385e4782d3f221661a976, type: 3}
     - target: {fileID: 1302943580773500585, guid: 06d96f94678ecd64e842a2554f6a7893, type: 3}
       propertyPath: m_Name
       value: Player

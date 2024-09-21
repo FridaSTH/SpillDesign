@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     public float damage = 1f;
     public float speed = 1f;
     public float timeToDisappear;
-    Vector2 direction;
+    public Vector2 direction;
     Rigidbody2D rb;
     //Quaternion initialQuaternion;
     // Start is called before the first frame update
@@ -15,13 +15,13 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         // Find direction the bullet should fly toward
-        Vector2 mousePos = Input.mousePosition;
-        Camera cam = Camera.main;
-        Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
-        //Vector3 screenPos = gameObject.transform.parent.GetComponentInParent<WeaponPosition>().screenPos;
-        //Vector3 screenPos = new Vector3(0.1f, 0.1f, 0f);
-        direction = new Vector2(mousePos.x - screenPos.x, mousePos.y - screenPos.y);
-        direction.Normalize();
+        // Vector2 mousePos = Input.mousePosition;
+        // Camera cam = Camera.main;
+        // Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+        // //Vector3 screenPos = gameObject.transform.parent.GetComponentInParent<WeaponPosition>().screenPos;
+        // //Vector3 screenPos = new Vector3(0.1f, 0.1f, 0f);
+        // direction = new Vector2(mousePos.x - screenPos.x, mousePos.y - screenPos.y);
+        // direction.Normalize();
 
         Destroy(gameObject, 1.0f);
     }
