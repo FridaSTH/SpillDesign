@@ -9,7 +9,7 @@ public class WeaponController : MonoBehaviour
     public GameObject weapon3;
     public GameObject bulletGeneration;
     private GameObject currentWeapon;
-    private List<GameObject> weaponList = new List<GameObject>();
+    public List<GameObject> weaponList = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
