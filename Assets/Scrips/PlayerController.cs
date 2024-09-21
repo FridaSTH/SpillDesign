@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
     // Runs once when left mouse button pressed
     void OnFire() {
-        bulletGeneration.GetComponent<BulletGeneration>().FireBullet(5f);
+        //bulletGeneration.GetComponent<BulletGeneration>().FireBullet(5f);
+        weaponController.GetComponent<WeaponController>().SingleFire();
     }
 }

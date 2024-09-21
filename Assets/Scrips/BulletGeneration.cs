@@ -19,6 +19,13 @@ public class BulletGeneration : MonoBehaviour
     
     public void FireBullet(float speed) {
         //print("fired at " + speed + " speed"); //new Vector3(0 * 2.0f, 0, 0)
-        GameObject singleBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        Instantiate(bullet, transform.position, Quaternion.identity);
+    }
+
+    public void FireThreeBullets(float speed) {
+        //print("fired at " + speed + " speed"); //new Vector3(0 * 2.0f, 0, 0)
+        Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.04f, transform.position.z), Quaternion.identity);
+        Instantiate(bullet, transform.position, Quaternion.identity);
+        Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 0.04f, transform.position.z), Quaternion.identity);
     }
 }

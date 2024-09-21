@@ -37,12 +37,31 @@ public class WeaponController : MonoBehaviour
     public void SetCurrentWeapon(GameObject weapon) {
         currentWeapon = weapon;
         foreach (GameObject weaponItem in weaponList) {
-            weaponItem.GetComponent<SpriteRenderer>().enabled = false;
+            //weaponItem.GetComponent<SpriteRenderer>().enabled = false;
+            SpriteRenderer renderer = weaponItem.GetComponent<SpriteRenderer>();
             if (weaponItem == currentWeapon) {
-                weaponItem.GetComponent<SpriteRenderer>().enabled = true;
+                renderer.enabled = true;
+                //if (renderer.sprite.name == "22") {} machinegun
+                //if (renderer.sprite.name == "44") {} shotgun
             } else {
-                weaponItem.GetComponent<SpriteRenderer>().enabled = false;
+                renderer.enabled = false;
             }
         }
+    }
+
+    public void SingleFire(){
+        if (currentWeapon.GetComponent<SpriteRenderer>().sprite.name == "44") {
+            FireThreeBullets();
+        } else {
+            FireSingleBullet();
+        }
+    }
+
+    public void FireSingleBullet() {
+        bulletGeneration.GetComponent<BulletGeneration>().FireBullet(5f);
+    }
+
+    public void FireThreeBullets() {
+        bulletGeneration.GetComponent<BulletGeneration>().FireThreeBullets(5f);
     }
 }
