@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     public GameObject drop3;
     private List<GameObject> dropList = new List<GameObject>();
     public float dropRate;
-    public float collisionOffset = 0.05f;
+    public float collisionOffset = 0.02f;
     public ContactFilter2D movementFilter;
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -21,6 +21,11 @@ public class Enemy : MonoBehaviour
     GameObject player;
     private bool isDying = false;
     public Collider2D hitBox;
+
+
+
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +91,7 @@ public class Enemy : MonoBehaviour
             
             return true;
         } else {
+            Attack();
             return false;
         };
     }
@@ -96,7 +102,8 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damageValue) {
         HealthPoints -= damageValue;
-        // Here we can calculate other stats like defense and shield ect
+        // Here we can calculate other stats like defense and shield etc
+        
     }
 
     public void Defeated() {
@@ -117,5 +124,25 @@ public class Enemy : MonoBehaviour
             }
         }
         Destroy(gameObject);
+    }
+
+    public GameObject attack;
+    private bool notAttacked = true;
+    private float timer = 0f;
+    private float attackCooldown = 1f;
+    // Generate attack collider for 1 update and cooldown 0.5 sec
+    public void Attack() {
+
+        timer += Time.deltaTime;
+        if (timer >= attackCooldown) {
+            Instantiate(attack, transform.position, Quaternion.identity);
+            timer = 0f;
+            // if(notAttacked) {
+            //         attack.GetComponent<Collider2D>().enabled = true;
+            //         print("attack");
+            //         notAttacked = false;
+            // }
+            // attack.GetComponent<Collider2D>().enabled = false;
+        }
     }
 }

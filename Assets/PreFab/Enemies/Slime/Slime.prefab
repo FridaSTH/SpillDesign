@@ -154,8 +154,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007936063, y: -0.012314693}
-  m_Size: {x: 0.17496182, y: 0.13227226}
+  m_Offset: {x: -0.008406687, y: -0.0170211}
+  m_Size: {x: 0.15237255, y: 0.11062579}
   m_Direction: 1
 --- !u!114 &2309521276677365851
 MonoBehaviour:
@@ -191,6 +191,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   hitBox: {fileID: 4092930100384358126}
+  attack: {fileID: 3269620503784953924, guid: 3f9a5e291d3088f44a598223f814120e, type: 3}
 --- !u!95 &4328972787677654533
 Animator:
   serializedVersion: 4
