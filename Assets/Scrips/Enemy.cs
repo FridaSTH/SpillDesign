@@ -127,7 +127,7 @@ public class Enemy : MonoBehaviour
     }
 
     public GameObject attack;
-    private bool notAttacked = true;
+    //private bool notAttacked = true;
     private float timer = 0f;
     private float attackCooldown = 1f;
     // Generate attack collider for 1 update and cooldown 0.5 sec

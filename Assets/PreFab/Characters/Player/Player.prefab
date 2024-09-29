@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 5
-  moveSpeed: 1
+  moveSpeed: 0.8
   collisionOffset: 0.01
   movementFilter:
     useTriggers: 0
@@ -549,6 +549,11 @@ MonoBehaviour:
     maxNormalAngle: 0
   hitBox: {fileID: 1389344520}
   weaponController: {fileID: 15026767}
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
+  heart4: {fileID: 0}
+  heart5: {fileID: 0}
 --- !u!50 &201761593775013648
 Rigidbody2D:
   serializedVersion: 4

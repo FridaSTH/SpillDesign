@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public float healthPoints = 5f;
-    public float moveSpeed = 1f;
+    public float moveSpeed = 0.8f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
     public Collider2D hitBox;                       // For getting hit
@@ -43,7 +43,11 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void FixedUpdate() {
+    private void Update() {
+        if (Input.GetMouseButtonDown(1)) {
+            print("right clicked");
+            Dash();
+        }
         if(movementInput != Vector2.zero){
             bool success = TryMove(movementInput);
             // If the movement is block, try moving sideways
@@ -56,7 +60,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isMovingDown", success);   // Need to add more moving directions animations
         } else {
             animator.SetBool("isMovingDown", false);
-        }   
+        }
     }
 
     // Check if there is an object in the moving direction and if not move toward that direction
@@ -68,7 +72,7 @@ public class PlayerController : MonoBehaviour
             moveSpeed * Time.fixedDeltaTime + collisionOffset
         );
         if(count == 0){
-            rb.MovePosition(rb.position + direction * 0.8f * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
             return true;
         } else {
             return false;
@@ -84,6 +88,10 @@ public class PlayerController : MonoBehaviour
     void OnFire() {
         weaponController.GetComponent<WeaponController>().SingleFire();
     }
+
+    // void OnRightClick() {
+    //     print("right clicked");
+    // }
 
     public void Defeated(){
         print("Died");
@@ -130,4 +138,15 @@ public class PlayerController : MonoBehaviour
         }
     }
     
+    public void Dash() {
+        if(moveSpeed < 1f) {
+            moveSpeed = 5f;
+            StartCoroutine(ResetDash());
+        }
+    }
+
+    IEnumerator ResetDash() {
+        yield return new WaitForSeconds(0.06f);
+        moveSpeed = 0.8f;
+    }
 }
