@@ -549,6 +549,7 @@ MonoBehaviour:
     maxNormalAngle: 0
   hitBox: {fileID: 1389344520}
   weaponController: {fileID: 15026767}
+  stamina: {fileID: 0}
   heart1: {fileID: 0}
   heart2: {fileID: 0}
   heart3: {fileID: 0}
