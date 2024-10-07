@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public Collider2D hitBox;                       // For getting hit
     public WeaponController weaponController;       // For changing weapon
+    public StaminaController stamina;               // For stamina control
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -140,8 +141,12 @@ public class PlayerController : MonoBehaviour
     
     public void Dash() {
         if(moveSpeed < 1f) {
-            moveSpeed = 5f;
-            StartCoroutine(ResetDash());
+            // Check if the player have enough stamina
+            if (stamina.transform.localScale.x > 0.3f) {
+                moveSpeed = 3f;
+                StartCoroutine(ResetDash());
+                stamina.UseDash();
+            }
         }
     }
 

@@ -700,6 +700,7 @@ GameObject:
   - component: {fileID: 6079625060130559235}
   - component: {fileID: 6079625060130559233}
   - component: {fileID: 6079625060130559232}
+  - component: {fileID: 8577907958013152534}
   m_Layer: 5
   m_Name: StaminaAmount
   m_TagString: Untagged
@@ -765,6 +766,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8577907958013152534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079625060130559234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c66b64a9722c3541b5f786bf85d0da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6079625060347508869
 GameObject:
   m_ObjectHideFlags: 0

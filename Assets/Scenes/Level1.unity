@@ -806,6 +806,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6079625059006516214, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
   m_PrefabInstance: {fileID: 6079625060441877662}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1454979059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8577907958013152534, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+  m_PrefabInstance: {fileID: 6079625060441877662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c66b64a9722c3541b5f786bf85d0da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1458577966
 GameObject:
   m_ObjectHideFlags: 0
@@ -19869,5 +19880,9 @@ PrefabInstance:
       propertyPath: heart5
       value: 
       objectReference: {fileID: 1995193008}
+    - target: {fileID: 6104504080739493715, guid: 06d96f94678ecd64e842a2554f6a7893, type: 3}
+      propertyPath: stamina
+      value: 
+      objectReference: {fileID: 1454979059}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06d96f94678ecd64e842a2554f6a7893, type: 3}
