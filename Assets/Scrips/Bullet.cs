@@ -35,6 +35,7 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Enemy") {
             // Deal damage
+            print("hit enemy");
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null) {
                 enemy.TakeDamage(damage);

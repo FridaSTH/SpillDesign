@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     GameObject player;
     private bool isDying = false;
     public Collider2D hitBox;
+    private SpriteRenderer spriteRenderer;
 
 
 
@@ -33,6 +34,7 @@ public class Enemy : MonoBehaviour
         //print("dsfds");
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindWithTag("Player");
         if (drop1 != null) {
             dropList.Add(drop1);
@@ -44,6 +46,7 @@ public class Enemy : MonoBehaviour
             dropList.Add(drop3);
         }
     }
+
     public float HealthPoints {
         set {
             healthPoints = value;
@@ -73,6 +76,11 @@ public class Enemy : MonoBehaviour
                     }
                 }
                 animator.SetBool("isMoving", success);   // Need to add more moving directions
+                if (movementInput.x < 0f) {
+                    spriteRenderer.flipX = true;
+                } else {
+                    spriteRenderer.flipX = false;
+                }
             } else {
                 animator.SetBool("isMoving", false);
             }
@@ -87,7 +95,7 @@ public class Enemy : MonoBehaviour
             moveSpeed * Time.fixedDeltaTime + collisionOffset
         );
         if(count == 0){
-            rb.MovePosition(rb.position + direction * 0.3f * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
             
             return true;
         } else {
@@ -115,6 +123,7 @@ public class Enemy : MonoBehaviour
     }
 
     public void RemoveEnemy() {
+        print("remove enemy");
         if (dropRate > Random.Range(0f, 1f)) {
             if (dropList.Count > 0)
             {
