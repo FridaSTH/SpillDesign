@@ -1,0 +1,1636 @@
+<REAPER_PROJECT 0.1 "7.21/win64" 1727350974
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 128
+  ENVATTACH 1
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 619.17364216533588 3402 0
+  VZOOMEX 6 135
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 1
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  <RECORD_CFG
+    ZXZhdxgAAA==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN ambience_ship
+  RENDER_FMT 0 2 48000
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 16 7000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  TIMELOCKMODE 0
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 0
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 48000 0 0
+  <RENDER_CFG
+    ZXZhdxgAAA==
+  >
+  LOCK 1
+  <METRONOME 6 1
+    VOL 1.323618 1.350451
+    BEATLEN 4
+    FREQ 800 1600 1
+    SAMPLES "D:\downloads\pro tools\Marimba\MetronomeUp.wav" "D:\downloads\pro tools\Marimba\Metronome.wav"
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0
+    SPLDEF 3 440 "" 0
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 0 0
+  SELECTION2 0 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 -1 -1 -1 0 0 0 -1 -1 0 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {89CC7E25-A64E-424F-835C-948DC4132142}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {5D5A7DEE-3A58-453F-8315-F9927B830959}
+    ACT 0 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {49ED87CF-15E8-4DEB-9381-C5855C117921}
+    NAME "main amb"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.89125093813375 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SEL 0
+    REC 0 0 0 0 0 1 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {49ED87CF-15E8-4DEB-9381-C5855C117921}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <MUTEENV
+      EGUID {6D23C164-D250-4B59-A080-6FC64EECD0D3}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 1 -1 -1
+      PT 0 1 1
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5220FD55-21A4-4E97-9265-7223D2F7A13F}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {92DB4D10-C751-43BF-A3F7-7245A406662C}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 1.88399999996182
+      SNAPOFFS 0
+      LENGTH 0.97004194274293
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F4B2499E-AD11-409C-9662-9D173581D18E}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {ED4BA7AC-221A-44A3-9FD9-76771D5470C3}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 2.85404194270475
+      SNAPOFFS 0
+      LENGTH 0.91395805725707
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B32F31C4-A24F-4366-8297-1A5F51C5D1CB}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0.97004194274293
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7BC2FE68-224A-4C43-98FF-69BA4AD36A74}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.76799999992363
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BE4F191D-DDD3-44F0-839F-BE04B50BE789}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7A35B2A7-33D0-4B4F-941A-6E896B7C4C19}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 5.65199999988545
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AA24710A-91C5-4974-B33D-6C4097F10746}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {833EBB9E-606B-4EF3-96C7-3B3E62854FE1}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 7.53599999984726
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5FE1E4CD-BA19-4DB4-B4B4-1D3C2B425E2C}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FB767F06-3CB3-45B8-A040-66203FDCBBA1}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 9.41999999980908
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7BC261F4-6789-4123-8D11-BB88046172AC}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1C4EFF99-5475-4FFF-BAAE-2DE3DAA2AF75}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 11.30399999977089
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F7730058-F554-4506-9032-79C56E3FDD1D}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0AC70F79-2C0C-436B-8450-DBA5F86E109F}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 13.18799999973271
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C33C944A-17CF-4A8D-B80A-7A4901BBE88D}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F497D1C5-DA0A-404E-968C-EE6A5DFA82B0}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 15.07199999969453
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DF991F53-81F4-4DF6-8D54-3D9B6091A5D1}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AA3C0EDF-0ED2-4771-B8A9-05390C083B62}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 16.95599999965634
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {403B1292-BE83-4904-AD3E-CF4B760D5A8B}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9830D97F-B222-4848-BE6D-7EEC8F3E4CF2}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 18.83999999961816
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {69A2875A-BE9D-4DCD-B329-FEBECFB804BC}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0EDBA7BD-D7C2-4ACB-BDA5-E896BC84080B}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 20.72399999957997
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D91B0DDF-24B8-4562-BB1D-A6AD882BADF4}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A392A43D-831F-4BAC-B5C2-661E2E6008E1}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 22.60799999954179
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {76D24DF0-B3C8-41E4-AF81-F61B7C5A1045}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5892417F-78CA-41FA-A035-E8D6009E3CEC}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.49199999950361
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FD9796FB-1C2C-4E6B-9256-53E71C36C65A}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1F35E8A2-9318-4158-8552-537EB8C98818}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 26.37599999946542
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {58A5C8E9-46E2-40A9-9402-43CB2C71E1A8}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C0CE8010-787A-4987-8B6B-71C3C7ADF375}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+    <ITEM
+      POSITION 28.25999999942724
+      SNAPOFFS 0
+      LENGTH 1.884
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6B4C27BE-05A8-4E1C-B17D-6B14313C8A7C}
+      IID 1
+      NAME security.flac
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BBF73C03-2427-4DCD-951E-55690812BEF1}
+      <SOURCE FLAC
+        FILE "security.flac"
+      >
+    >
+  >
+  <TRACK {9882D62A-F14E-44BB-89C9-31B3495B7B71}
+    NAME data
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.1 -0.4 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 0 0 0 1 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9882D62A-F14E-44BB-89C9-31B3495B7B71}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <MUTEENV
+      EGUID {CBC01C3B-8F81-4D34-A8CE-D1AFF72F3D44}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 1 -1 -1
+      PT 0 1 1
+    >
+    <ITEM
+      POSITION 2.85985614368949
+      SNAPOFFS 0
+      LENGTH 0.04069940689315
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1CD9FDF4-9DE3-4EC9-ADBE-C07124439A90}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.23041864368947
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {69690A01-F487-4C98-842D-FB44FBE4CCE0}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 2.91444501641672
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1FBFE70F-01C1-4BBE-8C1F-8424B3ACF38B}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.05327441095853
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {92D971EE-8FB5-40EA-9CE1-64E7CB90A91D}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 2.970935362624
+      SNAPOFFS 0
+      LENGTH 0.03876133989824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6ED0E02B-8958-47B4-A231-98C7CA6D60EB}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.44991695762335
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C14B4E1B-FDA4-440D-BADE-F0314E512CDC}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.02520123845898
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {82D69713-BF1B-4960-B08C-67DD80DA55BD}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 3.78186919949105
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3360771E-D22E-4C60-8641-92108B1AB850}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 5.13659332098905
+      SNAPOFFS 0
+      LENGTH 0.04069940689315
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3DDCCCF1-6B68-4C48-8F1F-72D986D7C869}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.23041864368947
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {030BE2C1-A01F-4ADA-9AD1-8DDA93F3D096}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 5.19118219369557
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C88D5DED-50EA-4383-9B8B-75D40943413F}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.05327441095853
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0D106A89-20AA-4DE0-B171-5E0BE9EDED58}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 5.24767253990285
+      SNAPOFFS 0
+      LENGTH 0.03876133989824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {03D5F5F1-07B3-4B06-AAF9-A86BBFFD9412}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.44991695762335
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {677A9B34-53EB-4098-8859-2DAD17FF8415}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 5.30193841573782
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BDBD9849-6EAE-4E57-839D-C56F7EB044FE}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 3.78186919949105
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {74A10CD7-37EC-4AAD-A483-FE791489453C}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.27425670193043
+      SNAPOFFS 0
+      LENGTH 0.04069940689315
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5C0D1328-BD92-4804-B746-98D72821E6C6}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.23041864368947
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F186BD4B-10B4-4D8B-A314-26883DE2969C}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.32884557463694
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8146289D-B6C9-45B5-BF92-9D3F89D0387B}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.05327441095853
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {96647772-36B8-46D4-9212-A06874043C40}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.38533592084423
+      SNAPOFFS 0
+      LENGTH 0.03876133989824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DD951A2F-175F-45EB-BF7E-89ECF6C1F7F0}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.44991695762335
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4B0B6AD4-1E61-4D88-BF13-6987DE373847}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.4396017966792
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D7EC213D-256D-4057-8277-A2A7C119C09D}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 3.78186919949105
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E06B7AE6-669B-4460-B5AD-913B9B0B4D05}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.96683333336841
+      SNAPOFFS 0
+      LENGTH 0.04069940689315
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8C6FAC27-FF75-40BC-A34E-8D2FB2E9B78F}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.23041864368947
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {317A4906-2E8C-44FB-9155-1ADE039FCE6C}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 25.02142220607493
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0DF1424F-91E6-4CE2-B714-1EDA44CC160A}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.05327441095853
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {00994ED4-29A2-48B1-8EA1-DC33B9CE52EA}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 25.07791255228221
+      SNAPOFFS 0
+      LENGTH 0.03876133989824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {971E0A76-174F-40C0-AA08-C545D4E3B77E}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.44991695762335
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {764BEE80-8684-4AED-973F-35660E0C4AA3}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+    <ITEM
+      POSITION 25.13217842811719
+      SNAPOFFS 0
+      LENGTH 0.03682327290332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {44B35DD2-D6A6-4582-8418-EA02C5FAD503}
+      IID 53
+      NAME "Generic Click Digital 31.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 3.78186919949105
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EF2E68BA-66ED-4D7B-A573-692E7FF15508}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 31.flac"
+      >
+    >
+  >
+  <TRACK {A5CBEB7D-AE1F-4FB3-A4B2-E863DA8B0947}
+    NAME data2
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.07079457843841 0.39 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 1
+    REC 0 0 0 0 0 1 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A5CBEB7D-AE1F-4FB3-A4B2-E863DA8B0947}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <MUTEENV
+      EGUID {7932A991-34E7-42C4-9265-C8D3CE882E15}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 1 -1 -1
+      PT 0 1 1
+      PT 2.86129421 1 0
+      PT 3.07821169 1 1
+      PT 3.18301333 1 0
+      PT 23.48897627 1 1
+      PT 23.48907627 1 1
+      PT 23.59387791 1 0
+      PT 24.68410334 1 0
+      PT 24.68420334 1 1
+      PT 25.2079924 1 0
+      PT 25.2080924 1 1
+    >
+    <ITEM
+      POSITION 3.07821169178287
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D5B3947D-83C5-4CB0-B6DE-EE1C554CFD56}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F32E113E-D944-4FC3-8A07-3DDA9C4E949D}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.19158861096858
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {107902BC-CE18-4ED8-8DA2-64CEAE88952C}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3B1922B0-DE60-4CB3-AF5C-5F9D91B67E2E}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.30141240736107
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2955F0C3-5BE8-40E0-95A9-8BCCCC52B120}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AC813ADC-F849-4DF0-92A6-AA2D239A2C4A}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.40962114794151
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2749E167-6362-4DEE-9C52-79A4D83BA664}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {86C1C3A8-F3AC-479B-B728-34F49B74FD9E}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.52590516766741
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {688D0E34-F88F-4E75-8C41-1CA55B3B41C5}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9D528C91-410D-46C8-B4CC-D768818E8867}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.63734401983549
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5F6F1B53-E357-4DEC-8695-448CD7BE2E7A}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8759C764-7792-4FB6-AA3B-86192DA8CC48}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.75201298374759
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {398E3E05-21E9-461F-80D5-FE8C5D4A0F20}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {13E87809-0757-4CD5-AA5D-4A982C28862E}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.86506689174476
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6B0EAA4D-56D0-4F8F-9AC1-2E1DC3AD2330}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2ACDA957-10F4-44A0-989C-04909EEDA14B}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 3.9813509114154
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {EE2BFD0E-CEFF-4BAB-AB5E-75869B62649C}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7118DED8-A585-41DA-83A8-F35CC4145CB5}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 4.09440481939731
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8D995103-9F6D-4023-9CB3-06E95169F6FE}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E63D8A5D-C323-425C-A1CE-97F16FC0F995}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 4.20540641723827
+      SNAPOFFS 0
+      LENGTH 0.06783234482191
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F092422E-DD9B-45C6-8109-F69B6B5F5B74}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.12913279245025
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {180DE97D-260A-47AA-B107-D91184F6483E}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.48907626769505
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {02044B54-322D-4768-A501-255448C7445B}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B24A2536-1F50-452A-A2E5-F9C55B623A82}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.60245318687521
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {27E7306D-D159-4D77-AA07-D3932E521382}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {16B41D84-31CA-4705-BCCE-AB3CA19229F3}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.71227698319126
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {403BD432-C167-429D-A130-3828A7700136}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E7A39A33-F865-47A7-976C-B9A36B31968A}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.82048572378699
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3C18484B-A4B0-416F-8A1C-CE00FC48B6FF}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {381990E9-17BC-4958-8C24-2EDFE02F78A4}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 23.9367697435664
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A68CCE74-CDE1-4100-9F27-5781AE5E38B3}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5DB8EEF8-C1BD-48F8-A7C7-BF3C774322DC}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.04820859571919
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5BE16F1E-4FA6-4784-B2C8-A3A5714304AA}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4C7989F8-5CC5-415F-9335-0F09590DC921}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.16287755966187
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {55088EFF-7B79-469B-B447-53E0CD572BB2}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {78177F3C-649F-47F9-8AA2-A59C89857B19}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.27593146765139
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A5A2A69E-6C5D-49A3-8A1A-32A19E71F607}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {97EA32E0-7BFE-436A-8875-7CBA71D89948}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.39221548731439
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1DC9FE80-8D60-4422-BBD2-80794204DAEC}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8C0A2A3F-EB3E-4625-B402-4D37163BE15B}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.50526939530391
+      SNAPOFFS 0
+      LENGTH 0.10271755073033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {85A1DED3-C2B2-460E-9EBC-31E9BF1296BC}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.00193806699491
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {06FD0DA5-AE58-4CF9-B469-FB1E5C88BBD8}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 24.61627099313773
+      SNAPOFFS 0
+      LENGTH 0.06783234482191
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {546B8733-D3B4-4F9E-90C0-82D08FC9417A}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.12913279245025
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {432CBAD1-C738-4A82-AFFB-9286D30A1920}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+  >
+  <TRACK {D52E875C-8B45-4E8E-AA95-1B9261943EF9}
+    NAME data3
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.03548133892336 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 0 0 0 1 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D52E875C-8B45-4E8E-AA95-1B9261943EF9}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <MUTEENV
+      EGUID {DC066D84-1194-48A2-9C5E-AF7AE50A1C8D}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 1 -1 -1
+      PT 0 1 1
+      PT 5.26814088 1 1
+      PT 5.26824088 1 1
+      PT 25.17112444 1 1
+      PT 25.17122444 1 1
+      PT 25.35367865 1 1
+      PT 25.35377865 1 1
+      PT 25.78304583 1 1
+      PT 25.78314583 1 1
+      PT 25.96560004 1 1
+      PT 25.96570004 1 1
+    >
+    <ITEM
+      POSITION 5.2682408845285
+      SNAPOFFS 0
+      LENGTH 0.10270818785502
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {1C852ABA-AEB1-44C2-A506-128D8A961E50}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.19196725977341
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5F734A86-E742-4C73-AD04-DA818937E90F}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 5.33635807714212
+      SNAPOFFS 0
+      LENGTH 0.114337011341
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2AD8158C-7DAC-4A59-8C0E-A6F94CE90C54}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 3.32157965532567
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B6C4F138-4EA6-4447-A33F-792EBF466790}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 25.17122444172855
+      SNAPOFFS 0
+      LENGTH 0.10270818785502
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {21E297C8-58A1-4F07-8102-4D72ED6E44B3}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.19196725977341
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {50ADBDC8-CC19-40F5-9C0E-675D60FC34C8}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+    <ITEM
+      POSITION 25.23934163432568
+      SNAPOFFS 0
+      LENGTH 0.114337011341
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1B8EE901-3D6F-4B28-BA41-D53D12AA694C}
+      IID 74
+      NAME "Generic Click Digital 12.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 3.32157965532567
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5084AB89-AC34-47AF-B9A4-2A1B86AEB146}
+      <SOURCE FLAC
+        FILE "Generic Click Digital 12.flac"
+      >
+    >
+  >
+  <TRACK {4D6CABA5-CB0B-4B5D-B11A-4C9DF671835C}
+    NAME scan
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.19952623149689 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 0 0 0 1 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4D6CABA5-CB0B-4B5D-B11A-4C9DF671835C}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <MUTEENV
+      EGUID {7E20BB19-9A85-4E27-9739-AABC5A1A0E30}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 1 -1 -1
+      PT 0 1 1
+    >
+    <ITEM
+      POSITION 3.56652604166667
+      SNAPOFFS 0
+      LENGTH 9.84727083333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {24633848-102A-4D09-902F-38CE49DEAA22}
+      IID 90
+      NAME "MUI SCAN SMALL Sizzling Grains.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.23016796451955
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {427D7273-982A-4262-9E17-962910B34943}
+      <SOURCE FLAC
+        FILE "MUI SCAN SMALL Sizzling Grains.flac"
+      >
+    >
+    <ITEM
+      POSITION 13.41379687504377
+      SNAPOFFS 0
+      LENGTH 9.84727083333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F31377D5-F442-4452-97FD-372EC195065A}
+      IID 90
+      NAME "MUI SCAN SMALL Sizzling Grains.flac"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.23016796451955
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {79446376-5235-4725-96B0-4CD911BF387B}
+      <SOURCE FLAC
+        FILE "MUI SCAN SMALL Sizzling Grains.flac"
+      >
+    >
+  >
+  <EXTENSIONS
+    <OSARA_PEAKWATCHER
+      WATCHER NONE TYPE 0 FOLLOW 0 LEVEL 0 HOLD 0 NOTIFY 1 1
+      WATCHER NONE TYPE 0 FOLLOW 0 LEVEL 0 HOLD 0 NOTIFY 1 1
+    >
+  >
+>

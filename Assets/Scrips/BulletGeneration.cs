@@ -21,6 +21,7 @@ public class BulletGeneration : MonoBehaviour
         //print("fired at " + speed + " speed"); //new Vector3(0 * 2.0f, 0, 0)
         Bullet bullet1 = Instantiate(bullet, transform.position, Quaternion.identity);
         bullet1.direction = BulletDirection(0f);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.playerFire, this.transform.position);
     }
 
     public void FireThreeBullets(float speed) {
@@ -31,6 +32,7 @@ public class BulletGeneration : MonoBehaviour
         bullet2.direction = BulletDirection(0f);
         Bullet bullet3 = Instantiate(bullet, transform.position, Quaternion.identity);
         bullet3.direction = BulletDirection(0.1f);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.playerFire, this.transform.position);
     }
 
     public Vector2 BulletDirection(float radians) {

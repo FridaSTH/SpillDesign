@@ -124,3 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146a454259e1e614e8b9d5a617c0ff69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponCollectedSound:
+    Guid:
+      Data1: 1513052853
+      Data2: 1256467286
+      Data3: -1464720999
+      Data4: -198621340
+    Path: event:/WeaponCollected

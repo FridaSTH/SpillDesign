@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class PlayerController : MonoBehaviour
     public Collider2D hitBox;                       // For getting hit
     public WeaponController weaponController;       // For changing weapon
     public StaminaController stamina;               // For stamina control
+
+    private EventInstance playerFootsteps;
+    private Vector2 previousPosition;
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -42,13 +46,22 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
+        previousPosition = rb.position;
     }
 
-    private void Update() {
+    void Update() {
         if (Input.GetMouseButtonDown(1)) {
             print("right clicked");
             Dash();
         }
+    }
+
+    void FixedUpdate() {
+        //UpdateSound();
+        // print(rb.position);
+        // print(previousPosition);
+        
         if(movementInput != Vector2.zero){
             bool success = TryMove(movementInput);
             // If the movement is block, try moving sideways
@@ -62,6 +75,8 @@ public class PlayerController : MonoBehaviour
         } else {
             animator.SetBool("isMovingDown", false);
         }
+        UpdateSound();
+        previousPosition = rb.position;
     }
 
     // Check if there is an object in the moving direction and if not move toward that direction
@@ -140,6 +155,7 @@ public class PlayerController : MonoBehaviour
     }
     
     public void Dash() {
+        print(moveSpeed);
         if(moveSpeed < 1f) {
             // Check if the player have enough stamina
             if (stamina.transform.localScale.x > 0.3f) {
@@ -153,5 +169,23 @@ public class PlayerController : MonoBehaviour
     IEnumerator ResetDash() {
         yield return new WaitForSeconds(0.06f);
         moveSpeed = 0.8f;
+    }
+
+
+    private void UpdateSound() {
+        if (previousPosition != rb.position) {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED)) {
+                playerFootsteps.start();
+            }
+        } else {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+        // PLAYBACK_STATE playbackState;
+        // playerFootsteps.getPlaybackState(out playbackState);
+        // if (playbackState.Equals(PLAYBACK_STATE.STOPPED)) {
+        //     playerFootsteps.start();
+        // }
     }
 }
