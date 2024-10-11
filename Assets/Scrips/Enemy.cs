@@ -99,7 +99,7 @@ public class Enemy : MonoBehaviour
             
             return true;
         } else {
-            Attack();
+            Attack();                      // Attack() in FixedUpdate() is not good      <---------------------------
             return false;
         };
     }

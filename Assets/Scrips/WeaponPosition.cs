@@ -19,7 +19,9 @@ public class WeaponPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // position of the mouse on the screen
         mousePos = Input.mousePosition;
+        // position of the player with respect to the screen
         screenPos = cam.WorldToScreenPoint(transform.position);
         Quaternion target;
 
