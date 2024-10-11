@@ -28410,6 +28410,14 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1841966582, guid: 06d96f94678ecd64e842a2554f6a7893, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841966583, guid: 06d96f94678ecd64e842a2554f6a7893, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1302943580773500585, guid: 06d96f94678ecd64e842a2554f6a7893, type: 3}
       propertyPath: m_Name
       value: Player

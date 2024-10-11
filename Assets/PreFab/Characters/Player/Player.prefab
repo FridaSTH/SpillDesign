@@ -340,7 +340,7 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensityEnabled: 1
   m_ShadowIntensity: 0.241
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -378,7 +378,7 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 19.04
   m_PointLightOuterAngle: 40.48
-  m_PointLightInnerRadius: 0.54065967
+  m_PointLightInnerRadius: 0.62807965
   m_PointLightOuterRadius: 1.9318242
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
