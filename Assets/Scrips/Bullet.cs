@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float damage = 1f;
-    public float speed = 1f;
+    public float speed = 3f;
     public float timeToDisappear;
     public Vector2 direction;
     Rigidbody2D rb;
@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + direction * 3f * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
