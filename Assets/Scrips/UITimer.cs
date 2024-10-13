@@ -9,7 +9,8 @@ public class UITimer : MonoBehaviour
 {
     // Public variables for easy setup in the Inspector
     public Text timerText;  // Reference to a UI Text element
-    public float countdownTime = 600f;  // 10 minutes in seconds (10 * 60 = 600 seconds)
+    public float countdownTime = 10f;  // 10 minutes in seconds (10 * 60 = 600 seconds)
+    public LevelFinishScreen levelFinishedPanel;
 
     // Private variables
     private float remainingTime;
@@ -59,5 +60,8 @@ public class UITimer : MonoBehaviour
     {
         Debug.Log("Timer has finished!");
         // Add additional logic here for when the timer finishes
+        if (levelFinishedPanel != null) {
+            levelFinishedPanel.FinishLevel();
+        }
     }
 }

@@ -17,6 +17,8 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] float tweenDuration;
 
+    [SerializeField] CanvasGroup canvasGroup;
+
     public void PauseGame() {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
@@ -44,14 +46,23 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void PauseIntro() {
+        canvasGroup.DOFade(1, tweenDuration).SetUpdate(true);
         pauseTitlePanel.DOAnchorPosY(pauseTitleYPosEnd, tweenDuration).SetUpdate(true);
         pauseContentPanel.DOAnchorPosY(pauseContentYPosEnd, tweenDuration).SetUpdate(true);
     }
 
     async Task PauseOutro() {
+        var canvasGroupTween = canvasGroup.DOFade(1, tweenDuration).SetUpdate(true).AsyncWaitForCompletion();
         var pauseTitleTween = pauseTitlePanel.DOAnchorPosY(pauseTitleYPosBegin, tweenDuration).SetUpdate(true).AsyncWaitForCompletion();
         var pauseContentTween = pauseContentPanel.DOAnchorPosY(pauseContentYPosBegin, tweenDuration).SetUpdate(true).AsyncWaitForCompletion();
-        await Task.WhenAll(pauseTitleTween, pauseContentTween);
+        await Task.WhenAll(canvasGroupTween, pauseTitleTween, pauseContentTween);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            ResumeGame();
+        }
+    }
 }
