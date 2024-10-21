@@ -22,6 +22,9 @@ public class LevelFinishScreen : MonoBehaviour
     [SerializeField] CanvasGroup titleCanvasGroup;
     [SerializeField] CanvasGroup contentCanvasGroup;
 
+    public Animator transition;
+    public float transitionTime = 1f;
+
     public async void FinishLevel() {
         finishScreen.SetActive(true);
         Time.timeScale = 0;
@@ -39,5 +42,24 @@ public class LevelFinishScreen : MonoBehaviour
     public void ReturnToMainMenu() {
         SceneManager.LoadSceneAsync(0);
         Time.timeScale = 1;
+    }
+
+    public void ContinueLevel() {
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+        if (currentLevel == 3) {
+            // Completed last level, show ending animation?
+            ReturnToMainMenu();  // <----------------- temp
+        } else {
+            StartCoroutine(LoadLevel(currentLevel + 1));
+            Time.timeScale = 1;
+        }
+    }
+
+    IEnumerator LoadLevel(int levelIndex) {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadSceneAsync(levelIndex);
     }
 }
