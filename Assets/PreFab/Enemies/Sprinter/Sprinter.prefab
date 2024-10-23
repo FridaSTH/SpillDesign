@@ -42,11 +42,11 @@ GameObject:
   - component: {fileID: 3576574637460760089}
   - component: {fileID: 4821051495272712363}
   - component: {fileID: 8303714507681587153}
-  - component: {fileID: 4092930100384358126}
   - component: {fileID: 2309521276677365851}
   - component: {fileID: 4328972787677654533}
+  - component: {fileID: 5260979533201206496}
   m_Layer: 0
-  m_Name: Slime
+  m_Name: Sprinter
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1535847708, guid: 79da4a4dda8a9414fa5cd47bb692357d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a45cb2c4165b52e4493bf3f5da8b21b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,22 +141,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &4092930100384358126
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3874134867645406843}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.008406687, y: -0.0170211}
-  m_Size: {x: 0.15237255, y: 0.11062579}
-  m_Direction: 1
 --- !u!114 &2309521276677365851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 2
-  moveSpeed: 0.5
+  moveSpeed: 0.6
   drop1: {fileID: 5051093706587134312, guid: e733f82c14f778c4f98a4c37f6fe4bbf, type: 3}
   drop2: {fileID: 3956639112926053801, guid: f717976d73f57cd4494fc8a489c32bac, type: 3}
   drop3: {fileID: 3758309300222360, guid: 81f019ca9dd02704cbe68b348bcc8e4a, type: 3}
@@ -190,8 +174,8 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hitBox: {fileID: 4092930100384358126}
-  isDashable: 0
+  hitBox: {fileID: 5260979533201206496}
+  isDashable: 1
   dashSpeed: 1.5
   dashTiggerRadius: 1
   attack: {fileID: 3269620503784953924, guid: 3f9a5e291d3088f44a598223f814120e, type: 3}
@@ -205,7 +189,7 @@ Animator:
   m_GameObject: {fileID: 3874134867645406843}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af0b07159d8c9c848b97298e7a402943, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2f8f1f398adfb6c459ea16625bf8bc15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -215,3 +199,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &5260979533201206496
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3874134867645406843}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0015367642, y: 0.0015099794}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.11851753, y: 0.13447255}
+  m_EdgeRadius: 0
